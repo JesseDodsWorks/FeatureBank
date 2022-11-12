@@ -1,7 +1,33 @@
 
-.likebutton i {
-    background-color: pink;
+.thumbbutton a {
     display:flex;
-    justify-content: flex-end;
-    
+    transform: scaleX(-1);
+    color:azure;
+    margin-right: 5%;
+    text-decoration: none;
 }
+
+a.liked {
+    color:yellow;
+}
+
+.unliked:hover{
+    animation-name: pulseUp;
+    animation-duration: 2s ;
+    animation-iteration-count:infinite;
+}
+
+
+@keyframes pulseUp {
+    0%   {text-shadow: 0px 0px 0px yellow;}
+    20%  {text-shadow: 0px 0px 2px yellow;}
+    35%  {text-shadow: 0px 0px 3px yellow;}
+    50%  {text-shadow: 0px 0px 6px yellow;}
+    65%  {text-shadow: 0px 0px 3px yellow;}
+    70%  {text-shadow: 0px 0px 2px yellow;}
+    100% {text-shadow: 0px 0px 0px yellow;}
+  }
+
+  /* click explosion below */
+
+  

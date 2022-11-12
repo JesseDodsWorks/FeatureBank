@@ -10,6 +10,7 @@
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/post_feed.css') }}">
 
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/post_likebutton.css') }}">
+<script type="text/javascript" src="{{ url_for('static', filename='scripts/likebutton.js') }}"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
@@ -87,10 +88,10 @@
 
                 <!-- LIKE BUTTON START -->
 
-                <div class="likebutton">
-                    <i class="bi bi-hand-thumbs-up"></i>
+                <div class="thumbbutton">
+                    <a id="lb" class="bi bi-hand-thumbs-up unliked" onclick="likedPost()">  </a>
                 </div>
-
+                <!-- <i id="lb" class="bi bi-hand-thumbs-up"></i> -->
                 <!-- LIKE BUTTON END   -->
 
             </div>
