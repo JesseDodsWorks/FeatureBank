@@ -1,0 +1,7 @@
+
+.likebutton i {
+    background-color: pink;
+    display:flex;
+    justify-content: flex-end;
+    
+}
