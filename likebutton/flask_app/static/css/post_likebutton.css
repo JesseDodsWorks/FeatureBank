@@ -1,10 +1,11 @@
 
 .thumbbutton a {
     display:flex;
-    transform: scaleX(-1);
+    transform: scaleX(1);
     color:azure;
     margin-right: 5%;
     text-decoration: none;
+    z-index: 2;
 }
 
 a.liked {
@@ -28,6 +29,88 @@ a.liked {
     100% {text-shadow: 0px 0px 0px yellow;}
   }
 
-  /* click explosion below */
+  /* click splash effect below */
 
-  
+.anim {
+    animation: moving 0.5s linear reverse forwards;
+}
+
+@keyframes moving {
+    0%{
+        transform: scale(0);
+    }
+    10%{
+        transform: scale(1);
+    }
+    100%{
+        top:50%;
+
+    }
+  }
+
+.thumbbutton a span {
+    background-color: pink;
+    border: 1px solid darkorchid;
+    width:4px;
+    height:4px;
+    border-radius: 50%;
+    position:absolute;
+    top:50%;
+    left: 2%;
+    right:10%;
+    bottom: 0%;
+    z-index: -1;
+    transform: scale(0);
+}
+
+.thumbbutton a span:nth-child(1) {
+    top:115%;
+    left: 2%;
+    right:10%;
+    bottom: 0%;
+}
+.thumbbutton a span:nth-child(2) {
+    top:-35%;
+    left: 2%;
+    right:10%;
+    bottom: 0%;
+}
+.thumbbutton a span:nth-child(3) {
+    top:50%;
+    left: 5.5%;
+    bottom: 0%;
+}
+.thumbbutton a span:nth-child(4) {
+    top:50%;
+    left: -1.5%;
+    bottom: 0%;
+}
+.thumbbutton a span:nth-child(5) {
+    top:-10%;
+    left: -.5%;
+    bottom: 0%;
+}
+.thumbbutton a span:nth-child(6) {
+    top:-10%;
+    left: 4.5%;
+    bottom: 0%;
+}
+.thumbbutton a span:nth-child(7) {
+    top:100%;
+    left: -.5%;
+    bottom: 0%;
+}
+
+.thumbbutton a span:nth-child(8) {
+    top:100%;
+    left: 4.5%;
+    bottom: 0%;
+}
+.thumbbutton a span:nth-child(9) {
+    top:50%;
+    left: 2%;
+    right:10%;
+    bottom: 0%;
+}
+
+
