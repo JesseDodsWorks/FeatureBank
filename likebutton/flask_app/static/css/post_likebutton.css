@@ -1,7 +1,7 @@
 
 .thumbbutton a {
     display:flex;
-    transform: scaleX(1);
+    transform: scaleX(-1);
     color:azure;
     margin-right: 5%;
     text-decoration: none;
@@ -28,89 +28,159 @@ a.liked {
     70%  {text-shadow: 0px 0px 2px yellow;}
     100% {text-shadow: 0px 0px 0px yellow;}
   }
+  
+/* ############################################### */
+
+
+/* ############################################### */
 
   /* click splash effect below */
 
-.anim {
-    animation: moving 0.5s linear reverse forwards;
+.anim_1 {
+    animation: moving_1 1s ease forwards;
+    
+}
+.anim_2 {
+    animation: moving_2 1s ease forwards;
+}
+.anim_3 {
+    animation: moving_3 1s ease forwards;
 }
 
-@keyframes moving {
+@keyframes moving_1 {
     0%{
         transform: scale(0);
+        top:50%;
+        left: 2%;
     }
     10%{
         transform: scale(1);
     }
     100%{
-        top:50%;
+        
+    }
+  }
+  @keyframes moving_2 {
+    0%{
+        transform: scale(0);
+        top:25%;
+        left: .75%;
+    }
+    10%{
 
+        transform: scale(1);
+    }
+    100%{
+        
+    }
+  }
+  @keyframes moving_3 {
+    0%{
+        transform: scale(0);
+        top:12%;
+        left: 3%;
+    }
+    10%{
+        transform: scale(1);
+    }
+    100%{
+        
     }
   }
 
+  /* span 1 */
 .thumbbutton a span {
     background-color: pink;
     border: 1px solid darkorchid;
-    width:4px;
-    height:4px;
+    width:3px;
+    height:5px;
     border-radius: 50%;
     position:absolute;
-    top:50%;
-    left: 2%;
-    right:10%;
-    bottom: 0%;
-    z-index: -1;
-    transform: scale(0);
+    z-index:-3; /* set back to -1*/
+    transform: scale(0); /* set back to 0*/
 }
 
 .thumbbutton a span:nth-child(1) {
-    top:115%;
+    top:55%;
     left: 2%;
-    right:10%;
-    bottom: 0%;
 }
 .thumbbutton a span:nth-child(2) {
-    top:-35%;
-    left: 2%;
-    right:10%;
-    bottom: 0%;
+    top:15%;
+    left: 1.5%;
 }
 .thumbbutton a span:nth-child(3) {
-    top:50%;
-    left: 5.5%;
-    bottom: 0%;
+    top:48%;
+    left: 3.5%;
 }
 .thumbbutton a span:nth-child(4) {
-    top:50%;
-    left: -1.5%;
-    bottom: 0%;
-}
-.thumbbutton a span:nth-child(5) {
-    top:-10%;
-    left: -.5%;
-    bottom: 0%;
-}
-.thumbbutton a span:nth-child(6) {
-    top:-10%;
-    left: 4.5%;
-    bottom: 0%;
-}
-.thumbbutton a span:nth-child(7) {
-    top:100%;
-    left: -.5%;
-    bottom: 0%;
+    top:58%;
+    left: .5%;
 }
 
-.thumbbutton a span:nth-child(8) {
-    top:100%;
-    left: 4.5%;
-    bottom: 0%;
+
+
+
+/* span 2 */
+.thumbbutton a span.green {
+    background-color: lightseagreen;
+    border: 1px solid darkcyan;
+    width:6px;
+    height:3px;
+    border-radius: 50%;
+    position:absolute;
+    z-index:-2; /* set back to -1*/
+    transform: scale(0); /* set back to 0*/
 }
+/*
+
+ */
+.thumbbutton a span:nth-child(5) {
+    top:25%;
+    left: 1.75%;
+}
+.thumbbutton a span:nth-child(6) {
+    top:25%;
+    left: 0%;
+}
+.thumbbutton a span:nth-child(7) {
+    top:38%;
+    left: .75%;
+}
+.thumbbutton a span:nth-child(8) {
+    top:-5%;
+    left: .68%;
+}
+
+
+
+
+/* span 3 */
+.thumbbutton a span.orange {
+    background-color: lightsalmon;
+    border: 1px solid rgb(180, 116, 37);
+    width:4px;
+    height:7px;
+    border-radius: 50%;
+    position:absolute;
+    z-index:-1; /* set back to -1*/
+    transform: scale(0); /* set back to 0*/
+}
+
 .thumbbutton a span:nth-child(9) {
-    top:50%;
-    left: 2%;
-    right:10%;
-    bottom: 0%;
+    top:10%;
+    left: 3.2%;
+}
+.thumbbutton a span:nth-child(10) {
+    top:-25%;
+    left: 3.6%;
+}
+.thumbbutton a span:nth-child(11) {
+    top:-16%;
+    left: 2.7%;
+}
+.thumbbutton a span:nth-child(12) {
+    top:5%;
+    left: 4%;
 }
 
 
